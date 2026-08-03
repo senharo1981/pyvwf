@@ -1,1 +1,467 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پاکستان یوتھ وائس اینڈ رائٹرز فورم | PYVWF</title>
+<meta name="description" content="پاکستان یوتھ وائس اینڈ رائٹرز فورم — اردو زبان و ادب، نوجوانوں کی تربیت، آن لائن تعلیم اور ادبی سرگرمیوں کا ڈیجیٹل مرکز۔">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<!-- ===== سکرول پراگریس ===== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== ہیڈر ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="#home" class="brand">
+      <span class="brand-logo">
+        <!-- لوگو یہاں دکھائی دے گا: /assets/images/logo.png -->
+        <img src="assets/images/logo.png" alt="PYVWF لوگو" onerror="this.parentElement.classList.add('logo-fallback'); this.remove();">
+      </span>
+      <span class="brand-text">
+        <strong>پاکستان یوتھ وائس اینڈ رائٹرز فورم</strong>
+        <em>PYVWF</em>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="مینو کھولیں" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#home" class="active">ہوم</a></li>
+        <li><a href="#about">ہمارے بارے میں</a></li>
+        <li><a href="#team">ہماری ٹیم</a></li>
+        <li><a href="#news">ادبی و تنظیمی خبریں</a></li>
+        <li><a href="#library">ادبی لائبریری</a></li>
+        <li><a href="#authors">شائع شدہ مصنفین</a></li>
+        <li><a href="#magazine">آن لائن میگزین</a></li>
+        <li><a href="#kids">بچوں کا گھر</a></li>
+        <li><a href="#courses">کورسز و ورکشاپس</a></li>
+        <li><a href="#contests">مقابلہ جات</a></li>
+        <li><a href="#events">ایونٹس</a></li>
+        <li><a href="#gallery">گیلری</a></li>
+        <li><a href="#contact">رابطہ</a></li>
+      </ul>
+      <a href="#membership" class="btn btn-gold nav-cta">رکنیت حاصل کریں</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== بریکنگ نیوز ٹکر ===== -->
+<div class="ticker-bar">
+  <span class="ticker-label">تازہ ترین</span>
+  <div class="ticker-track" id="tickerTrack">
+    <ul id="tickerList">
+      <li>سہ ماہی آن لائن میگزین کا نیا شمارہ جلد شائع ہو رہا ہے</li>
+      <li>قومی سطح پر افسانہ نویسی مقابلہ — رجسٹریشن جاری ہے</li>
+      <li>"بچوں کا گھر" میں نئی کہانیاں اور نظمیں شامل کر دی گئیں</li>
+      <li>Creative Writing کورس کے لیے داخلے کھل گئے</li>
+      <li>فورم کے بانی و صدر کا نیا پیغام شائع ہو چکا ہے</li>
+    </ul>
+  </div>
+</div>
+
+<main id="home">
+
+  <!-- ===== ہیرو سیکشن ===== -->
+  <section class="hero">
+    <div class="hero-page">
+      <div class="hero-corner hero-corner--tr"></div>
+      <div class="hero-corner hero-corner--bl"></div>
+      <p class="hero-eyebrow">علم • ادب • کردار • خدمت</p>
+      <h1 class="hero-title">جہاں اس دور میں مستقبل کے معماروں کو<br>خوابوں کی تعبیر ملتی ہے</h1>
+      <div class="hero-swash" aria-hidden="true">
+        <svg viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0,20 C100,0 150,40 200,20 C250,0 300,40 400,20" /></svg>
+      </div>
+      <p class="hero-desc">پاکستان یوتھ وائس اینڈ رائٹرز فورم — اردو زبان و ادب، نوجوانوں کی فکری و تخلیقی تربیت، تحقیق، مطالعہ اور ادبی سرگرمیوں کے فروغ کے لیے ایک قومی و بین الاقوامی ڈیجیٹل پلیٹ فارم۔</p>
+      <div class="hero-actions">
+        <a href="#membership" class="btn btn-maroon">رکنیت کے لیے رجسٹر کریں</a>
+        <a href="#magazine" class="btn btn-outline">آن لائن میگزین دیکھیں</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== اعدادوشمار ===== -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item"><span class="stat-num" data-count="500">0</span><span class="stat-label">ممبران</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="120">0</span><span class="stat-label">مصنفین</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="80">0</span><span class="stat-label">شعراء</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="35">0</span><span class="stat-label">شائع شدہ کتب</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="15">0</span><span class="stat-label">ممالک</span></div>
+      <div class="stat-item"><span class="stat-num" data-count="60">0</span><span class="stat-label">شہر</span></div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== ہمارے بارے میں ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <p class="section-eyebrow">تعارف</p>
+      <h2 class="section-title">ہمارے بارے میں</h2>
+
+      <div class="about-grid">
+        <article class="page-card reveal">
+          <h3>ہمارا وژن</h3>
+          <p>پاکستان یوتھ وائس اینڈ رائٹرز فورم کو اردو زبان و ادب، نوجوانوں کی فکری و تخلیقی تربیت، تحقیق، مطالعہ، آن لائن تعلیم، ادبی سرگرمیوں، مصنفین و شعراء کی ترویج، اور قومی و بین الاقوامی علمی روابط کے لیے ایک عالمی معیار کا ڈیجیٹل پلیٹ فارم بنانا۔</p>
+        </article>
+        <article class="page-card reveal">
+          <h3>ہمارا مشن</h3>
+          <ul class="tick-list">
+            <li>نوجوان نسل کی مثبت تربیت</li>
+            <li>اردو زبان و ادب کا فروغ</li>
+            <li>اہلِ قلم کی حوصلہ افزائی</li>
+            <li>مطالعہ اور تحقیق کا فروغ</li>
+            <li>تخلیقی صلاحیتوں کی ترقی</li>
+            <li>آن لائن تعلیمی سرگرمیوں کا انعقاد</li>
+          </ul>
+        </article>
+        <article class="page-card reveal">
+          <h3>بنیادی اقدار</h3>
+          <div class="value-pills">
+            <span>دیانت داری</span><span>شفافیت</span><span>احترام</span><span>خدمت</span>
+            <span>علم دوستی</span><span>ادب پروری</span><span>تحقیق</span><span>میرٹ</span>
+            <span>اتحاد</span><span>مثبت سوچ</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== بانی و صدر ===== -->
+  <section class="founder">
+    <div class="container founder-grid">
+      <div class="founder-photo-wrap reveal">
+        <!-- بانی کی تصویر یہاں دکھائی دے گی: /assets/images/founder.jpg -->
+        <div class="founder-photo">
+          <img src="assets/images/founder.jpg" alt="بانی و صدر" onerror="this.parentElement.classList.add('photo-fallback'); this.remove();">
+        </div>
+      </div>
+      <div class="founder-text reveal">
+        <p class="section-eyebrow">پیغامِ بانی</p>
+        <h2 class="section-title">بانی و صدر کا پیغام</h2>
+        <blockquote>
+          "زبان و ادب کسی بھی قوم کی پہچان ہوتے ہیں۔ ہمارا مقصد نوجوان نسل کو قلم سے جوڑنا اور ان کے خوابوں کو الفاظ کی صورت دنیا کے سامنے لانا ہے۔"
+        </blockquote>
+        <p class="founder-name">— بانی و صدر، پاکستان یوتھ وائس اینڈ رائٹرز فورم</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== ہماری ٹیم ===== -->
+  <section id="team" class="section team">
+    <div class="container">
+      <p class="section-eyebrow">رفقائے کار</p>
+      <h2 class="section-title">ہماری ٹیم</h2>
+      <div class="team-grid">
+        <div class="team-card reveal"><div class="team-avatar"></div><h4>نام یہاں</h4><p>عہدہ</p></div>
+        <div class="team-card reveal"><div class="team-avatar"></div><h4>نام یہاں</h4><p>عہدہ</p></div>
+        <div class="team-card reveal"><div class="team-avatar"></div><h4>نام یہاں</h4><p>عہدہ</p></div>
+        <div class="team-card reveal"><div class="team-avatar"></div><h4>نام یہاں</h4><p>عہدہ</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== ادبی و تنظیمی خبریں ===== -->
+  <section id="news" class="section news">
+    <div class="container">
+      <p class="section-eyebrow">تازہ ترین</p>
+      <h2 class="section-title">ادبی و تنظیمی خبریں</h2>
+      <div class="news-grid">
+        <article class="news-card reveal">
+          <span class="news-tag">پریس ریلیز</span>
+          <h3>فورم کی سرگرمیوں کی رپورٹ جاری</h3>
+          <p>گزشتہ ماہ منعقدہ ادبی نشستوں اور تربیتی سرگرمیوں کا مختصر جائزہ۔</p>
+        </article>
+        <article class="news-card reveal">
+          <span class="news-tag">ملاقات</span>
+          <h3>ادبی شخصیت سے خصوصی نشست</h3>
+          <p>معروف اہلِ قلم کے ساتھ نوجوان لکھاریوں کی تربیتی گفتگو۔</p>
+        </article>
+        <article class="news-card reveal">
+          <span class="news-tag">اعلان</span>
+          <h3>نئے کورسز کا آغاز</h3>
+          <p>Creative Writing اور Graphic Designing کے کورسز میں رجسٹریشن جاری۔</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== ادبی لائبریری ===== -->
+  <section id="library" class="section library">
+    <div class="container">
+      <p class="section-eyebrow">مطالعہ</p>
+      <h2 class="section-title">ادبی لائبریری</h2>
+      <div class="library-grid">
+        <a href="#" class="lib-item reveal">غزل</a>
+        <a href="#" class="lib-item reveal">نظم</a>
+        <a href="#" class="lib-item reveal">آزاد نظم</a>
+        <a href="#" class="lib-item reveal">افسانہ</a>
+        <a href="#" class="lib-item reveal">مضمون</a>
+        <a href="#" class="lib-item reveal">کالم</a>
+        <a href="#" class="lib-item reveal">تحقیق</a>
+        <a href="#" class="lib-item reveal">تنقید</a>
+        <a href="#" class="lib-item reveal">سفرنامہ</a>
+        <a href="#" class="lib-item reveal">انٹرویو</a>
+        <a href="#" class="lib-item reveal">کتابی تبصرے</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== شائع شدہ مصنفین ===== -->
+  <section id="authors" class="section authors">
+    <div class="container">
+      <p class="section-eyebrow">اہلِ قلم</p>
+      <h2 class="section-title">نمایاں شائع شدہ مصنفین</h2>
+      <div class="authors-grid">
+        <article class="author-card reveal">
+          <div class="author-photo"></div>
+          <h4>نام</h4>
+          <p class="author-city">شہر</p>
+          <p class="author-bio">مختصر ادبی تعارف یہاں شامل کیا جائے گا۔</p>
+        </article>
+        <article class="author-card reveal">
+          <div class="author-photo"></div>
+          <h4>نام</h4>
+          <p class="author-city">شہر</p>
+          <p class="author-bio">مختصر ادبی تعارف یہاں شامل کیا جائے گا۔</p>
+        </article>
+        <article class="author-card reveal">
+          <div class="author-photo"></div>
+          <h4>نام</h4>
+          <p class="author-city">شہر</p>
+          <p class="author-bio">مختصر ادبی تعارف یہاں شامل کیا جائے گا۔</p>
+        </article>
+        <article class="author-card reveal">
+          <div class="author-photo"></div>
+          <h4>نام</h4>
+          <p class="author-city">شہر</p>
+          <p class="author-bio">مختصر ادبی تعارف یہاں شامل کیا جائے گا۔</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== آن لائن میگزین ===== -->
+  <section id="magazine" class="section magazine">
+    <div class="container magazine-grid">
+      <div class="magazine-cover reveal"></div>
+      <div class="magazine-text reveal">
+        <p class="section-eyebrow">سہ ماہی جریدہ</p>
+        <h2 class="section-title">آن لائن میگزین</h2>
+        <p>فورم کا سہ ماہی آن لائن میگزین — منتخب شاعری، افسانے، مضامین اور تنقیدی تحریروں پر مشتمل۔ آن لائن پڑھیں یا PDF ڈاؤن لوڈ کریں۔</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-maroon">موجودہ شمارہ پڑھیں</a>
+          <a href="#" class="btn btn-outline">گزشتہ شمارے</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== بچوں کا گھر ===== -->
+  <section id="kids" class="section kids">
+    <div class="container">
+      <p class="section-eyebrow">نئی نسل</p>
+      <h2 class="section-title">بچوں کا گھر</h2>
+      <p class="section-sub">کہانیاں، نظمیں، مضامین، ڈرائنگ اور بچوں کی تخلیقی دنیا کے لیے مقابلے۔</p>
+      <div class="kids-grid">
+        <div class="kids-item reveal">📖<span>کہانیاں</span></div>
+        <div class="kids-item reveal">🎵<span>نظمیں</span></div>
+        <div class="kids-item reveal">📝<span>مضامین</span></div>
+        <div class="kids-item reveal">🎨<span>ڈرائنگ</span></div>
+        <div class="kids-item reveal">🏆<span>بچوں کے مقابلے</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== کورسز و ورکشاپس ===== -->
+  <section id="courses" class="section courses">
+    <div class="container">
+      <p class="section-eyebrow">تربیت</p>
+      <h2 class="section-title">کورسز و ورکشاپس</h2>
+      <div class="course-grid">
+        <div class="course-card reveal"><h4>Creative Writing</h4><p>تخلیقی تحریر کے بنیادی اصول اور مشقیں</p></div>
+        <div class="course-card reveal"><h4>شاعری</h4><p>عروض، بحر اور شعری اصناف کی تربیت</p></div>
+        <div class="course-card reveal"><h4>افسانہ</h4><p>کہانی کی بنت اور کردار نگاری</p></div>
+        <div class="course-card reveal"><h4>کالم نویسی</h4><p>مؤثر اور بامعنی کالم لکھنے کا فن</p></div>
+        <div class="course-card reveal"><h4>Graphic Designing</h4><p>بنیادی ڈیزائننگ مہارتیں</p></div>
+        <div class="course-card reveal"><h4>Video Editing</h4><p>ویڈیو ایڈیٹنگ کی عملی تربیت</p></div>
+        <div class="course-card reveal"><h4>Voice Over</h4><p>آواز کے فن میں مہارت</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== مقابلہ جات ===== -->
+  <section id="contests" class="section contests">
+    <div class="container">
+      <p class="section-eyebrow">مسابقت</p>
+      <h2 class="section-title">مقابلہ جات</h2>
+      <div class="contest-list">
+        <span class="contest-chip reveal">شاعری</span>
+        <span class="contest-chip reveal">مضمون نویسی</span>
+        <span class="contest-chip reveal">افسانہ</span>
+        <span class="contest-chip reveal">تقریر</span>
+        <span class="contest-chip reveal">گرافک ڈیزائننگ</span>
+        <span class="contest-chip reveal">Voice Over</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== ایونٹس ===== -->
+  <section id="events" class="section events">
+    <div class="container">
+      <p class="section-eyebrow">تقریبات</p>
+      <h2 class="section-title">ایونٹس</h2>
+      <div class="events-grid">
+        <div class="event-card reveal">
+          <div class="event-date"><span>15</span>ستمبر</div>
+          <div><h4>آن لائن مشاعرہ</h4><p>فورم کے شعراء کی خصوصی نشست</p></div>
+        </div>
+        <div class="event-card reveal">
+          <div class="event-date"><span>28</span>ستمبر</div>
+          <div><h4>تربیتی ورکشاپ</h4><p>تخلیقی تحریر پر عملی ورکشاپ</p></div>
+        </div>
+        <div class="event-card reveal">
+          <div class="event-date"><span>05</span>اکتوبر</div>
+          <div><h4>سیمینار</h4><p>اردو ادب کے مستقبل پر مکالمہ</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== گیلری ===== -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <p class="section-eyebrow">تصاویر و ویڈیوز</p>
+      <h2 class="section-title">فوٹو و ویڈیو گیلری</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal"></div>
+        <div class="gallery-item reveal"></div>
+        <div class="gallery-item reveal"></div>
+        <div class="gallery-item reveal"></div>
+        <div class="gallery-item reveal"></div>
+        <div class="gallery-item reveal"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== ممبرشپ ===== -->
+  <section id="membership" class="section membership">
+    <div class="container membership-box">
+      <p class="section-eyebrow">شمولیت</p>
+      <h2 class="section-title">فورم کی رکنیت حاصل کریں</h2>
+      <p class="section-sub">اہلِ قلم، طلبہ اور ادب دوست حضرات کے لیے رکنیت کھلی ہے۔ آن لائن رجسٹریشن مکمل کریں، رکنیت انتظامیہ کی منظوری کے بعد فعال ہوگی۔</p>
+      <form class="membership-form" id="membershipForm">
+        <div class="form-row">
+          <input type="text" placeholder="مکمل نام" required>
+          <input type="email" placeholder="ای میل" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" placeholder="فون / واٹس ایپ" required>
+          <input type="text" placeholder="شہر" required>
+        </div>
+        <textarea placeholder="اپنے بارے میں مختصر تعارف" rows="3"></textarea>
+        <button type="submit" class="btn btn-gold">رجسٹریشن جمع کروائیں</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="chapter-divider" aria-hidden="true"><svg viewBox="0 0 200 24"><path d="M0,12 C40,0 60,24 100,12 C140,0 160,24 200,12"/><circle cx="100" cy="12" r="4"/></svg></div>
+
+  <!-- ===== رابطہ ===== -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="section-eyebrow">رابطہ کریں</p>
+        <h2 class="section-title">ہم سے رابطہ</h2>
+        <ul class="contact-info">
+          <li><strong>ای میل:</strong> info@pyvwf.org</li>
+          <li><strong>واٹس ایپ:</strong> +92-3XX-XXXXXXX</li>
+          <li><strong>ویب سائٹ:</strong> www.PYVWF.org</li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="WhatsApp">WhatsApp</a>
+        </div>
+      </div>
+      <form class="contact-form reveal">
+        <input type="text" placeholder="نام" required>
+        <input type="email" placeholder="ای میل" required>
+        <textarea placeholder="پیغام" rows="4" required></textarea>
+        <button type="submit" class="btn btn-maroon">پیغام بھیجیں</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== فوٹر ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>پاکستان یوتھ وائس اینڈ رائٹرز فورم</h4>
+      <p>علم • ادب • کردار • خدمت — اردو زبان و ادب اور نوجوان نسل کی تربیت کے لیے ایک ڈیجیٹل ادارہ۔</p>
+    </div>
+    <div>
+      <h4>فوری روابط</h4>
+      <ul>
+        <li><a href="#about">ہمارے بارے میں</a></li>
+        <li><a href="#magazine">آن لائن میگزین</a></li>
+        <li><a href="#courses">کورسز</a></li>
+        <li><a href="#membership">رکنیت</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>قانونی</h4>
+      <ul>
+        <li><a href="#">پرائیویسی پالیسی</a></li>
+        <li><a href="#">شرائط و ضوابط</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 PYVWF — پاکستان یوتھ وائس اینڈ رائٹرز فورم۔ جملہ حقوق محفوظ ہیں۔</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="اوپر جائیں">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
